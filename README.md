@@ -74,8 +74,33 @@ server 0.00   23.33      3.984656s
 
 ## Build From Source
 
+1. Clone directory and Build
+
 ```bash
 go build cmd/lights/lights.go
+```
+
+2. Create directory
+
+```bash
+.lights/
+  |-- bin/
+    |-- lights
+```
+
+3. Add binary to `bin` directory - created in step 2
+
+4. Add to PATH (this example is for .zshrc)
+
+```vim
+export LIGHTS_INSTALL="$HOME/.lights"
+export PATH="$LIGHTS_INSTALL/bin:$PATH"
+```
+
+5. Reload source
+
+```bash
+source ~/.zshrc
 ```
 
 ## Notes
