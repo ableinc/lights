@@ -1,12 +1,3 @@
-# Ignore all
-*
-
-# Unignore all with extensions
-!*.*
-
-# Unignore all dirs
-!*/
-
 *.meta
-*.log
-*.tar.gz
+test*
+lights*
